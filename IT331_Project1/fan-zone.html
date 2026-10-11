@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seahawk Fan Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Seahawk Fan Zone!</h1>
+    </header>
+
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="standings.html">Standings</a></li>
+        </ul>
+    </nav>
+
+    <figure>
+        <img src="stadium.jpg" alt="Seahawks Stadium" class="home-photo">
+    </figure>
+
+<form action="fan-zone.html" method="post">
+    <fieldset>
+        <legend>About You</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Fan Preferences</legend>
+        <label for="favorite-player">Favorite Player:</label>
+        <input type="text" id="favorite-player" name="favorite-player" required>
+    </fieldset>
+    <fieldset>
+        <label for="favorite-executive">Favorite Front Office Executive:</label>
+        <input type="text" id="favorite-executive" name="favorite-executive" required>
+    </fieldset>
+    <fieldset>
+        <legend>Fan Profile</legend>
+        <fieldset>
+            <legend>How long have you been a fan?</legend>
+            <input type="radio" id="new" name="fan-years" value="new" required>
+            <label for="new">Less than 5 years</label><br>
+            <input type="radio" id="moderate" name="fan-years" value="moderate">
+            <label for="moderate">5-10 years</label><br>
+            <input type="radio" id="longtime" name="fan-years" value="longtime">
+            <label for="longtime">More than 10 years</label>
+        </fieldset>
+        <fieldset>
+            <legend>How do you watch games?</legend>
+            <input type="checkbox" id="stadium" name="watch-games" value="stadium">
+            <label for="stadium">At the Stadium</label><br>
+            <input type="checkbox" id="sometimes" name="watch-games" value="home">
+            <label for="at home">At Home</label><br>
+            <input type="checkbox" id="public" name="watch-games" value="public">
+            <label for="public">Publicly (Bars or Parties)</label>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Fan Satisfaction</legend>
+        <label for="satisfaction">Rate your satisfaction with the team this season (1-10):</label>
+        <select id="satisfaction" name="satisfaction" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Fan Excitement</legend>
+        <label for="excitement">How excited are you for the next game?</label>
+        <input type="range" id="excitement" name="excitement" min="1" max="10" value="5" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comments</legend>
+        <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts about the team..."></textarea>
+    </fieldset>
+    <input type="reset" value="Reset Form">
+    <input type="submit" value="Submit Form">
+
+    </body>
+</html>
+
+</form>
